@@ -23,7 +23,7 @@ class GreenyshGradient extends StatelessWidget {
           children: [
             Image.asset('assets/images/quiz-logo.png', height: 350),
             SizedBox(height: 100),
-            StyledText('Изучайте флаттер с удовольствием!', 30),
+            StyledText('Изучайте Flutter с удовольствием!', 30),
             SizedBox(height: 100),
             ElevatedButton(
               onPressed: () {},
