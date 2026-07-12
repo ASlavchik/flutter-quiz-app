@@ -13,5 +13,23 @@ void main() {
     ),
   );
 
-  runApp(const MaterialApp(home: Scaffold(body: GreenyshGradient())));
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 160, 227, 118),
+                Color.fromARGB(255, 138, 236, 89),
+              ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: GreenyshGradient(),
+        ),
+      ),
+    ),
+  );
 }

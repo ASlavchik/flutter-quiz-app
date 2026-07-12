@@ -6,35 +6,23 @@ class GreenyshGradient extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            const Color.fromARGB(255, 160, 227, 118),
-            const Color.fromARGB(255, 138, 236, 89),
-          ],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-        ),
-      ),
-      child: Center(
-        child: Column(
-          mainAxisSize: .min,
-          children: [
-            Image.asset('assets/images/quiz-logo.png', height: 350),
-            SizedBox(height: 100),
-            StyledText('Изучайте Flutter с удовольствием!', 30),
-            SizedBox(height: 100),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 96, 221, 0),
-                padding: EdgeInsets.all(15),
-              ),
-              child: StyledText('Поехали', 24),
+    return Center(
+      child: Column(
+        mainAxisSize: .min,
+        children: [
+          Image.asset('assets/images/quiz-logo.png', height: 350),
+          const SizedBox(height: 90),
+          StyledText('Изучайте Flutter с удовольствием!', 30),
+          const SizedBox(height: 80),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 96, 221, 0),
+              padding: EdgeInsets.all(15),
             ),
-          ],
-        ),
+            child: StyledText('Поехали', 24),
+          ),
+        ],
       ),
     );
   }
