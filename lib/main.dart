@@ -27,7 +27,7 @@ void main() {
               end: Alignment.bottomCenter,
             ),
           ),
-          child: GreenyshGradient(),
+          child: const GreenyshGradient(),
         ),
       ),
     ),

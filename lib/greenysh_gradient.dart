@@ -1,6 +1,8 @@
 import 'package:adv_basics/styled_text.dart';
 import 'package:flutter/material.dart';
 
+const Color textColor = Colors.white;
+
 class GreenyshGradient extends StatelessWidget {
   const GreenyshGradient({super.key});
 
@@ -16,18 +18,16 @@ class GreenyshGradient extends StatelessWidget {
             color: const Color.fromARGB(165, 255, 255, 255),
           ),
           const SizedBox(height: 90),
-          StyledText('Изучайте Flutter с удовольствием!', 30),
+          StyledText('Изучайте Flutter с удовольствием!', 30, color: textColor),
           const SizedBox(height: 40),
           ElevatedButton.icon(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color.fromARGB(255, 128, 237, 73),
-              padding: EdgeInsets.all(15),
+              padding: const EdgeInsets.all(15),
+              foregroundColor: textColor,
             ),
-            icon: const Icon(
-              Icons.arrow_circle_right_outlined,
-              color: Colors.white,
-            ),
+            icon: const Icon(Icons.arrow_circle_right_outlined),
             label: StyledText('Поехали', 24),
           ),
         ],

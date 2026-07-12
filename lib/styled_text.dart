@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class StyledText extends StatelessWidget {
-  const StyledText(this.txt, this.txtSize, {super.key});
+  const StyledText(this.txt, this.txtSize, {this.color, super.key});
 
   final double txtSize;
   final String txt;
+  final Color? color;
 
   @override
   Widget build(context) {
@@ -13,7 +14,7 @@ class StyledText extends StatelessWidget {
       style: TextStyle(
         fontFamily: 'YanMusFont',
         fontSize: txtSize,
-        color: Colors.white,
+        color: color,
       ),
       textAlign: .center,
     );
