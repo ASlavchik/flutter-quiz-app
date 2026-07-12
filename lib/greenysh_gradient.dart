@@ -10,17 +10,25 @@ class GreenyshGradient extends StatelessWidget {
       child: Column(
         mainAxisSize: .min,
         children: [
-          Image.asset('assets/images/quiz-logo.png', height: 350),
+          Image.asset(
+            'assets/images/quiz-logo.png',
+            height: 350,
+            color: const Color.fromARGB(165, 255, 255, 255),
+          ),
           const SizedBox(height: 90),
           StyledText('Изучайте Flutter с удовольствием!', 30),
-          const SizedBox(height: 80),
-          ElevatedButton(
+          const SizedBox(height: 40),
+          ElevatedButton.icon(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 96, 221, 0),
+              backgroundColor: const Color.fromARGB(255, 128, 237, 73),
               padding: EdgeInsets.all(15),
             ),
-            child: StyledText('Поехали', 24),
+            icon: const Icon(
+              Icons.arrow_circle_right_outlined,
+              color: Colors.white,
+            ),
+            label: StyledText('Поехали', 24),
           ),
         ],
       ),
