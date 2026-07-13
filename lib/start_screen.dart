@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 const Color textColor = Colors.white;
 
-class GreenyshGradient extends StatelessWidget {
-  const GreenyshGradient({super.key});
+class StartScreen extends StatelessWidget {
+  const StartScreen({super.key});
 
   @override
   Widget build(context) {
@@ -23,7 +23,7 @@ class GreenyshGradient extends StatelessWidget {
           ElevatedButton.icon(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 128, 237, 73),
+              backgroundColor: const Color.fromARGB(255, 236, 99, 238),
               padding: const EdgeInsets.all(15),
               foregroundColor: textColor,
             ),

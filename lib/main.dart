@@ -1,4 +1,4 @@
-import 'package:adv_basics/greenysh_gradient.dart';
+import 'package:adv_basics/quiz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,23 +13,5 @@ void main() {
     ),
   );
 
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 160, 227, 118),
-                Color.fromARGB(255, 138, 236, 89),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-          ),
-          child: const GreenyshGradient(),
-        ),
-      ),
-    ),
-  );
+  runApp(MaterialApp(home: Quiz()));
 }
