@@ -2,9 +2,10 @@ import 'package:adv_basics/styled_text.dart';
 import 'package:flutter/material.dart';
 
 class AnswerButton extends StatelessWidget {
-  const AnswerButton(this.buttonLabel, {super.key});
+  const AnswerButton(this.buttonLabel, this.onTap, {super.key});
 
   final String buttonLabel;
+  final void Function() onTap;
 
   @override
   Widget build(context) {
@@ -15,7 +16,7 @@ class AnswerButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
           backgroundColor: const Color.fromARGB(255, 236, 99, 238),
-          padding: EdgeInsets.only(top: 8, bottom: 8),
+          padding: const EdgeInsets.symmetric(vertical: 10),
         ),
         child: StyledText(buttonLabel, 20),
       ),
